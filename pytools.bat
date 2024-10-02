@@ -1,3 +1,5 @@
 @echo off
 
-C:\Users\kylem\OneDrive\Documents\ProgrammingProjects\Scripts\pytools\main.py
+cls
+
+%~dp0\main.py
