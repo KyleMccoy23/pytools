@@ -1,5 +1,6 @@
 from tools import newProject
 from tools import emailCleaner
+from tools import downloadCleaner
 
 while True:
     choise = input("""
@@ -11,7 +12,7 @@ while True:
 |                 
 |_ 2 - Python Lab
 |
-|_ 3 - Download Cleaner - WIP
+|_ 3 - Download Cleaner
 |
 |_ Q - Quit
                    
@@ -28,7 +29,7 @@ while True:
             newProject.labProject()
             break
         case '3':
-            print("curently a work in progress")
+            downloadCleaner.main()
             break
         case 'q':
             break
