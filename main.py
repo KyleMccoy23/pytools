@@ -35,4 +35,4 @@ while True:
         case 'q':
             break
 
-system('exit')
+system('quit')

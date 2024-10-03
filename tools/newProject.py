@@ -35,3 +35,4 @@ def labProject():
         f.write("print('Hello World')")
 
     os.system(f"code {projectPath}")
+    

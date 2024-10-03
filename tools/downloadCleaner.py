@@ -13,15 +13,17 @@ image_path = "C:\\Users\\kylem\\OneDrive\\Documents\\Sorted Downloads\\images"
 
 def main():
     for i in os.scandir(source_path):
+        
         if ".exe" in i.name or ".msi" in i.name:
             shutil.move(i.path, application_path)
-        if ".pdf" in i.name:
+        elif ".pdf" in i.name:
             shutil.move(i.path, pdf_path)
-        if ".docx" in i.name:
+        elif ".docx" in i.name:
             shutil.move(i.path, document_path)
-        if '.zip' in i.name:
+        elif '.zip' in i.name:
             shutil.move(i.path, archive_path)
-        if '.png' in i.name or '.webp' in i.name or '.jpg' in i.name or '.jpeg' in i.name :
+        elif '.png' in i.name or '.webp' in i.name or '.jpg' in i.name or '.jpeg' in i.name :
             shutil.move(i.path, image_path)
         else:
             shutil.move(i.path, misc_path)
+            
