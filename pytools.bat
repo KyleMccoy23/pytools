@@ -3,3 +3,5 @@
 cls
 
 %~dp0\main.py
+
+exit
