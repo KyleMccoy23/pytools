@@ -1,7 +1,6 @@
 from tools import newProject
 from tools import emailCleaner
 from tools import downloadCleaner
-from os import system
 
 while True:
     choise = input("""
@@ -34,5 +33,3 @@ while True:
             break
         case 'q':
             break
-
-system('quit')

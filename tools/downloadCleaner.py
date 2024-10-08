@@ -12,6 +12,10 @@ misc_path = "C:\\Users\\kylem\\OneDrive\\Documents\\Sorted Downloads\\Misc"
 image_path = "C:\\Users\\kylem\\OneDrive\\Documents\\Sorted Downloads\\images"
 
 def main():
+    
+    if os.chdir(source_path) is None:
+        return
+    
     for i in os.scandir(source_path):
         
         if ".exe" in i.name or ".msi" in i.name:
@@ -27,3 +31,4 @@ def main():
         else:
             shutil.move(i.path, misc_path)
             
+main()
