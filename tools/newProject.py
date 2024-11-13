@@ -18,6 +18,7 @@ def main():
         f.write("print('Hello World')")
 
     os.system(f"code {projectPath}")
+    SystemExit()
 
 def labProject():
     _path = "C:\\Users\\kylem\\OneDrive\\Documents\\ProgrammingProjects\\Labs"
@@ -35,4 +36,5 @@ def labProject():
         f.write("print('Hello World')")
 
     os.system(f"code {projectPath}")
+    SystemExit()
     

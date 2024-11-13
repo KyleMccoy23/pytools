@@ -30,5 +30,3 @@ def main():
             shutil.move(i.path, image_path)
         else:
             shutil.move(i.path, misc_path)
-            
-main()
