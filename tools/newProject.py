@@ -14,8 +14,7 @@ def main():
         except:
             print("There is already a project with that name")
 
-    with open(f'{projectPath}\\main.py', 'w') as f:
-        f.write("print('Hello World')")
+    shutil.copy(f'{_path}\\Scripts\\pytools\\Templates\\main.py', f'{projectPath}\\main.py')
 
     os.system(f"code {projectPath}")
     SystemExit()
@@ -38,3 +37,4 @@ def labProject():
     os.system(f"code {projectPath}")
     SystemExit()
     
+main()

@@ -13,11 +13,11 @@ image_path = "C:\\Users\\kylem\\OneDrive\\Documents\\Sorted Downloads\\images"
 
 def main():
     
-    if os.chdir(source_path) is None:
+    if os.scandir(source_path) is None:
+        print('source is empty')
         return
     
     for i in os.scandir(source_path):
-        
         if ".exe" in i.name or ".msi" in i.name:
             shutil.move(i.path, application_path)
         elif ".pdf" in i.name:
